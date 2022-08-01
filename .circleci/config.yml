@@ -449,7 +449,6 @@ jobs:
       - destroy-environment
       - revert-migrations
       
-  
   cleanup:
     docker:
       - image: cimg/python:3.10
@@ -458,7 +457,8 @@ jobs:
       - install_awscli
       - attach_workspace:
           at: ~/
-      - run: Cleanup server
+      - run:
+        name: Cleanup server
         command: |
           export STACKS=($(aws cloudformation list-stacks --query "StackSummaries[*].StackName" \
           --stack-status-filter CREATE_COMPLETE --no-paginate --output text)) 
