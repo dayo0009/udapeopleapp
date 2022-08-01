@@ -458,11 +458,11 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
-        name: Cleanup server
-        command: |
-          export STACKS=($(aws cloudformation list-stacks --query "StackSummaries[*].StackName" \
-          --stack-status-filter CREATE_COMPLETE --no-paginate --output text)) 
-          echo Stack names: "${STACKS[@]}"
+          name: Cleanup server
+          command: |
+            export STACKS=($(aws cloudformation list-stacks --query "StackSummaries[*].StackName" \
+            --stack-status-filter CREATE_COMPLETE --no-paginate --output text)) 
+            echo Stack names: "${STACKS[@]}"
    
       
 workflows:
