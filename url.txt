@@ -1,0 +1,11 @@
+1. Public Url to GitHub repository (not private) [URL01] - https://github.com/dayo0009/udapeopleapp/tree/master
+
+2. Public URL for your S3 Bucket (front-end) [URL02] - http://udapeople-c108f.s3-website-us-east-1.amazonaws.com
+
+3. Public URL for your CloudFront distribution (aka, your blue production front-end) [URL03] - http://dhvfvhppxlph7.cloudfront.net
+
+
+4. - Public URLs to deployed application back-end in EC2 [URL04] - (ec2-3-84-189-83.compute-1.amazonaws.com:3030)
+
+
+5. Prometheus and alertmanager Server [URL05] - (ec2-3-83-120-50.compute-1.amazonaws.com)
